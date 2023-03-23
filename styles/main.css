@@ -163,6 +163,8 @@ header .heading {
   color: var(--foreground);
   margin-bottom: 10px;
 }
+
+
 .projects p {
   color: var(--foreground);
   font-size: 0.9em;
