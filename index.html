@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Muffina</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="styles/main.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles/gitcards.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <section class="about-page">
+        <header>
+          <div class="heading">
+            <h1>Muffina</h1>
+            <h2>Professional procrastinator</h2>
+            <div class="contact">
+              <a
+                title="Contact me on Discord"
+                class="btn"
+                href="http://"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img
+                  height="32px"
+                  width="32px"
+                  src="assets/discord.svg"
+                  alt="Add me"
+              /></a>
+              <a
+                title="Contact me"
+                class="btn"
+                href="http://"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img
+                  height="32px"
+                  width="32px"
+                  src="assets/email.svg"
+                  alt="Add me"
+              /></a>
+            </div>
+          </div>
+          <div class="separator"></div>
+          <p>
+            I'm a 16 year old secondary school student who is interested in web
+            development and programming. I'm also a huge fan of Linux and I'm
+            currently using Arch Linux as my main operating system.
+          </p>
+        </header>
+        <div class="separator"></div>
+        <section class="info-about-me">
+          <div title="My age" class="badge">
+            <div class="icon time-sand">
+              <img height="32px" src="assets/time-sand.svg" alt="" />
+            </div>
+            <div id="age" class="text">Age</div>
+          </div>
+          <div title="Birthday" class="badge">
+            <div class="icon">
+              <img height="32px" src="assets/cake.svg" alt="" />
+            </div>
+            <div id="age" class="text">18.04.2006</div>
+          </div>
+        </section>
+      </section>
+      <section class="projects">
+        <h2>GitHub repositories:</h2>
+        <p>
+          These are some of my most recent projects that I've been working on.
+          Please note that these projects are not maintained nor updated and
+          some of them are not even finished.
+        </p>
+        <div id="repositories"></div>
+      </section>
+    </div>
+    <script src="scripts/index.js"></script>
+    <script src="scripts/git.js"></script>
+
+  </body>
+</html>

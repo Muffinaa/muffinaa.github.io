@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap');
+:root {
+  /* One dark colorscheme */
+  --background: #282c34;
+  --foreground: #abb2bf;
+  --comment: #5c6370;
+  --cyan: #56b6c2;
+  --green: #98c379;
+  --orange: #d19a66;
+  --pink: #c678dd;
+  --purple: #c678dd;
+  --red: #e06c75;
+  --yellow: #e5c07b;
+  --header-bg: #1e2127;
+  --header-text: #abb2bf;
+  --header-border: #5c6370;
+  --header-shadow: #1e2127;
+}
+
+*, *::after, *::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-size: 12pt;
+}
+
+body {
+  background: var(--background);
+  min-height: 100vh;
+  color: #fff;
+  font-family: 'Rubik', sans-serif;
+}
+
+.wrapper {
+  display: flex;
+  gap: 20px;
+
+}
+
+.about-page {
+  background: var(--header-bg);
+  padding: 20px;
+  margin: 10px;
+  border-radius: 12px;
+  max-width: 450px;
+  height: min-content;
+}
+
+.about-page h1 {
+  color: var(--foreground);
+  font-size: 1.5em;
+  font-weight: 400;
+  grid-area: name;
+}
+
+.about-page h2 {
+  color: var(--foreground);
+  font-size: 0.9em;
+  font-weight: 300;
+  grid-area: title;
+}
+h3 {
+  color: var(--foreground);
+  font-size: 0.9em;
+  font-weight: 300;
+}
+
+.about-page p {
+  color: var(--foreground);
+  font-size: 0.9em;
+  font-weight: 300;
+}
+
+header .heading {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "name contact"
+    "title contact";
+  /* align contact to right */
+  justify-content: space-between;
+
+}
+
+
+.separator {
+  /* Make it a gradient */
+  background: linear-gradient(to left, hsla(0, 0%, 100%, 0), hsla(0, 0%, 100%, 0.2) 50%, hsla(0, 0%, 100%, 0));
+
+  height: 1px;
+  margin: 10px 0px 10px 0px;
+}
+
+.btn {
+  background: var(--header-bg);
+  color: var(--header-text);
+  border: 1px solid var(--header-border);
+  border-radius: 4px;
+  padding: 10px;
+  margin: 5px 5px 5px 0px;
+  text-decoration: none;
+  font-size: 0.9em;
+  font-weight: 300;
+  display: grid;
+  place-items: center;
+  transition: all 0.1s ease-in-out;
+}
+.btn:hover, .btn:focus, .btn:active {
+  background: hsla(0, 0%, 100%, 0.1);
+  border: 1px solid var(--header-border);
+  transition: all 0.1s ease-in-out;
+}
+
+.contact {
+  grid-area: contact;
+  display: flex;
+  /* Make it go to the right */
+  justify-content: flex-end;
+}
+
+.info-about-me {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.badge {
+  background: var(--header-bg);
+  color: var(--header-text);
+  border: 1px solid var(--header-border);
+  border-radius: 4px;
+  padding: 5px;
+  margin: 5px 5px 5px 0px;
+  text-decoration: none;
+  font-size: 0.9em;
+  font-weight: 300;
+  transition: all 0.1s ease-in-out;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.badge img {
+  padding: 5px;
+  display: grid;
+  place-items: center;
+  height: 32px;
+  width: 32px;
+  
+}
+.badge:hover {
+  background: hsla(0, 0%, 100%, 0.1);
+  border: 1px solid var(--header-border);
+  transition: all 0.1s ease-in-out;
+}
+
+.projects {
+  margin-top: 10px;
+  padding: 20px;
+
+}
+.projects h2 {
+  color: var(--foreground);
+  margin-bottom: 10px;
+}
+.projects p {
+  color: var(--foreground);
+  font-size: 0.9em;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    flex-direction: column;
+  }
+  .about-page {
+    margin: 10px 5px 0px 5px;
+    max-width: 100%;
+  }
+
+  header .heading {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact {
+    justify-content: flex-start;
+    margin-top: 5px;
+  }
+}
