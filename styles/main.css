@@ -17,11 +17,24 @@
   --header-shadow: #1e2127;
 }
 
+@keyframes onsiteload {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  
+}
+
 *, *::after, *::before {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
   font-size: 12pt;
+
 }
 
 body {
@@ -29,6 +42,7 @@ body {
   min-height: 100vh;
   color: #fff;
   font-family: 'Rubik', sans-serif;
+  animation: onsiteload 1s ease-in-out;
 }
 
 .wrapper {
