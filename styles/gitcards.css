@@ -29,10 +29,6 @@ svg {
     gap: 10px;
     align-items: center;
   }
-  
-  d-none {
-    display: none !important;
-  }
 
   .stats span {
     display: inline-block;
@@ -81,7 +77,8 @@ svg {
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
-    font-size: 0.9em;
+    font-size: 0.8em;
     color: var(--header-text);
+    margin-top: 3px;
 
   }
